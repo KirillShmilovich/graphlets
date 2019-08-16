@@ -9,7 +9,10 @@ dependencies:
   - pytest
   - pytest-cov
   - codecov
-
+  - scikit-learn
+  - joblib
+  - numpy
+  - networkx
     # Pip-only installs
   #- pip:
   #  - codecov
