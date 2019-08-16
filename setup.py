@@ -5,6 +5,7 @@ Python package for computing graphlets
 import sys
 from setuptools import setup, find_packages
 import versioneer
+import subprocess
 
 short_description = __doc__.split("\n")
 
@@ -18,6 +19,7 @@ try:
 except:
     long_description = "\n".join(short_description[2:])
 
+p = subprocess.Popen(["g++", "-O2","-std=c++11","-o", "orca.exe","orca.cpp"], cwd="./orca").wait()
 
 setup(
     # Self-descriptive entries which should always be present

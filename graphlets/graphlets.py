@@ -4,7 +4,8 @@ Python package for computing graphlets
 
 Handles the primary functions
 """
-
+import os
+ORCA_PATH = os.path.abspath("../orca/orca.exe")
 
 def canvas(with_attribution=True):
     """
