@@ -1,8 +1,7 @@
 graphlets
 ==============================
 [//]: # (Badges)
-[![Travis Build Status](https://travis-ci.org/REPLACE_WITH_OWNER_ACCOUNT/graphlets.png)](https://travis-ci.org/REPLACE_WITH_OWNER_ACCOUNT/graphlets)
-[![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/graphlets/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/graphlets/branch/master)
+[![Build Status](https://travis-ci.org/KirillShmilovich/graphlets.svg?branch=master)](https://travis-ci.org/KirillShmilovich/graphlets)
 
 Python package for computing graphlets
 
