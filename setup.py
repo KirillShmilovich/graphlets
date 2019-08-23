@@ -3,7 +3,7 @@ graphlets
 Python package for computing graphlets
 """
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, Extension
 import versioneer
 import subprocess
 
@@ -19,7 +19,11 @@ try:
 except:
     long_description = "\n".join(short_description[2:])
 
-p = subprocess.Popen(["g++", "-O2","-std=c++11","-o", "orca.exe","orca.cpp"], cwd="./orca").wait()
+#p = subprocess.Popen(["g++", "-O2","-std=c++11","-o", "orca.exe","orca.cpp"], cwd="./graphlets").wait()
+orca_module = Extension("graphlets.graphlets",
+                        sources = ["graphlets/orca.cpp"],
+                        extra_compile_args = ["-std=c++11", "-O2"],
+                        )
 
 setup(
     # Self-descriptive entries which should always be present
@@ -45,7 +49,7 @@ setup(
 
     # Allows `setup.py test` to work correctly with pytest
     setup_requires=[] + pytest_runner,
-
+    ext_modules = [orca_module]
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # url='http://www.my_package.com',  # Website
     # install_requires=[],              # Required packages, pulls from pip if needed; do not use for Conda deployment

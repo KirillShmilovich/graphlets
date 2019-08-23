@@ -10,7 +10,7 @@ import networkx as nx
 
 __all__ = ["ORCA_PATH", "pbc", "orbits", "weights", "compute_graph"]
 
-ORCA_PATH = os.path.abspath(os.path.abspath(__file__) + "../../../orca/orca.exe")
+ORCA_PATH = os.path.abspath(os.path.abspath(__file__) + "../../orca.exe")
 
 def pbc(x0, x1, dims):
     delta = np.abs(x0 - x1)
