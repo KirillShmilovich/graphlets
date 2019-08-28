@@ -25,6 +25,8 @@ $ cd graphlets
 $ pip install -e .
 ```
 
+(Note the `-e` is required to ensure `orca/orca.cpp` compiles properly)
+
 ## Usage 
 
 The below examples shows how to compute a graphlet decomposition on a randomly generated set of points.
