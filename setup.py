@@ -3,7 +3,7 @@ graphlets
 Python package for computing graphlets
 """
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, Extension
 import versioneer
 import subprocess
 
@@ -45,7 +45,8 @@ setup(
 
     # Allows `setup.py test` to work correctly with pytest
     setup_requires=[] + pytest_runner,
-
+    #ext_modules = [orca_module]
+    
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # url='http://www.my_package.com',  # Website
     # install_requires=[],              # Required packages, pulls from pip if needed; do not use for Conda deployment
