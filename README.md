@@ -9,7 +9,7 @@ Small package for performing graphlet decomposition.
 
 Make sure you have the following installed on your machine.
 
-- A C compiler with C++11
+- A C++ compiler supporting C++11
 - [scikit-learn](http://scikit-learn.org/stable/install.html)
 - [joblib](https://joblib.readthedocs.io/en/latest/installing.html)
 - [numpy](https://docs.scipy.org/doc/numpy/user/install.html)
